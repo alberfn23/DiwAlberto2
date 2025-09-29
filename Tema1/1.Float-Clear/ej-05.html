@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios float y clear. Ej. 5</title>
+  <link rel="stylesheet" href="../../../Utils/css/general.css">
+
+  <style>
+     * {
+      box-sizing: border-box;
+    }
+
+     .todos.div1{
+     
+      background-color: brown;
+   
+      
+     
+
+    }
+    .todos.div2{
+    
+      background-color: aquamarine;
+      
+
+    }
+    .todos.div3{
+      
+      background-color: rgb(96, 168, 87);
+   
+     
+
+    }
+    .todos.div4{
+      
+      background-color: rgb(208, 255, 0);
+     
+    
+
+    }
+    .todos{
+    
+      float: left;
+      width: 25%;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+     
+
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  
+  </style>
+
+
+</head>
+
+<body>
+  <div class="clearfix">
+    <div class="todos div1">Div1</div>
+    <div class="todos div2">Div2</div>
+    <div class="todos div3">Div3</div>
+    <div class="todos div4">Div4</div>
+  </div>
+
+</body>
+
+</html>

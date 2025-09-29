@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios float y clear. Ej. 3</title>
+  <link rel="stylesheet" href="../../../Utils/css/general.css">
+
+  <style>
+    .div1{
+      padding: 50px;
+      background-color: aqua;
+      float: right;
+
+    }
+    .div2{
+      padding: 20px;
+      background-color: aqua;
+      float: left;
+
+    }
+    .texto{
+      background-color:chartreuse;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+   
+  </style>
+</head>
+
+<body>
+
+  <body>
+    <div class="div1">Div1</div>
+    <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsum possimus eius cum a hic excepturi molestias. Neque saepe fugit, placeat dolor autem porro voluptatibus numquam iste reprehenderit molestias ea.</div>
+    <div class="div2">Div2</div>
+  
+  </body>
+</body>
+
+</html>

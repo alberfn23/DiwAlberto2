@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios float y clear. Ej. 1</title>
+  <link rel="stylesheet" href="../../../Utils/css/general.css">
+
+  <style>
+    .div1{
+      padding: 50px;
+      background-color: brown;
+      float: left;
+
+    }
+    .div2{
+      padding: 50px;
+      background-color: aquamarine;
+      float: right;
+
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+   
+
+  </style>
+</head>
+
+<body>
+
+  <div class="clearfix">
+    <div class="div1">Div1</div>
+    <div class="div2">Div2</div>
+  </div>
+
+
+ 
+
+</body>
+
+</html>
